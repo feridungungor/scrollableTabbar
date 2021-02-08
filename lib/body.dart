@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sosyalmedya_appbar/social_media_media_pages/facebook.dart';
+import 'package:flutter_sosyalmedya_appbar/social_media_media_pages/instagram.dart';
+import 'package:flutter_sosyalmedya_appbar/social_media_media_pages/linkedin.dart';
+import 'package:flutter_sosyalmedya_appbar/social_media_media_pages/twitter.dart';
+import 'package:flutter_sosyalmedya_appbar/social_media_media_pages/youtube.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -13,51 +18,11 @@ class Body extends StatelessWidget {
     return TabBarView(
       controller: _controller,
       children: [
-        Container(
-          height: 200,
-          child: Center(
-            child: Text(
-              "Instagram",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        Container(
-          height: 200,
-          child: Center(
-            child: Text(
-              "Twitter",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        Container(
-          height: 200,
-          child: Center(
-            child: Text(
-              "Facebook",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        Container(
-          height: 200,
-          child: Center(
-            child: Text(
-              "Youtube",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        Container(
-          height: 200,
-          child: Center(
-            child: Text(
-              "Linkedin",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-          ),
-        )
+        Instagram(),
+        Twitter(),
+        Facebook(),
+        Youtube(),
+        Linkedin(),
       ],
     );
   }
